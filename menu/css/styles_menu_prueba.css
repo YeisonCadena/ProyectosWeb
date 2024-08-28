@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    /* background-color: rgb(233, 230, 230); */
+    /* background-color: #3C3D37; */
+    background-image: url("/img/picnic.jpeg");
+}
+.fondo {
+    background-image: url("/img/fondo.avif");
+}
+
+#container{
+    width: 80vw;
+    min-height: 100vh;
+    background-color: #A93401;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    border-radius: 15px;
+    padding-top: 20px;
+}
+
+.seccion{
+    width: 80%;
+    height: 30%;
+    background-color: rgba(218, 212, 181,0.8);
+    margin-left: 10%;
+    border-radius: 15px; 
+    padding: 10px; 
+    color: gray;  
+    
+}
+
+.products{
+    /* border: solid white; */
+    width: 60%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.products p{
+    display: inline-block;
+}
+
+.text{
+    width: 70%;
+}
+
+.image{
+    /* border: solid yellow; */
+    width: 39%;
+    display: inline-block;    
+}
+
+.image img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px gray;    
+}
+
+#titulo {
+    display: inline-block;
+    background-color: rgb(255, 170, 170);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 15px 25px 30px beige;
+    font-size: 6rem;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .subtitulo {
+    display: inline-block;
+    color: red;
+    background-color: rgba(255, 255, 255);
+    text-align: left;
+    padding: 10px;
+    border-radius: 15%;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 15px #fff;
+  }
+  
+  .centro {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .izq{
+    position: relative;
+    top: 25px;
+    left: 50px;
+  }
+  .der{
+    position: relative;
+    top: 25px;
+    left: 300px;
+  }
+

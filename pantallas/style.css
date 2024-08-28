@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  background-color: beige;
+}
+
+@media (max-width: 431px) {
+  body {
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "A"
+      "padreCajones"
+      "B"
+      "C"
+      "D"
+      "footer";
+  }
+  header {
+    grid-area: header;
+    width: 100vw;
+    height: 10vh;
+    display: grid;
+    grid-template-areas: "padre1 padre2";
+  }
+  #padre1 {
+    background-color: azure;
+    grid-area: padre1;
+    width: 40vw;
+    height: 10vh;
+    display: grid;
+    grid-template-areas: "figura texto";
+  }
+  #figura {
+    grid-area: figura;
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #texto {
+    grid-area: texto;
+    width: 40%;
+    height: 100%;
+    font-size: 20px;
+    align-content: center;
+  }
+  #padre2 {
+    grid-area: padre2;
+    width: 40vw;
+    height: 10vh;
+    grid-template-areas:
+      "one"
+      "two"
+      "three"
+      "four"
+      "five";
+    align-content: center;
+    text-align: center;
+  }
+  #one {
+    grid-area: one;
+    width: 50vw;
+    height: 2vh;
+    background-color: azure;
+  }
+  #two {
+    grid-area: two;
+    width: 50vw;
+    height: 2vh;
+    background-color: azure;
+  }
+  #three {
+    grid-area: three;
+    width: 50vw;
+    height: 2vh;
+    background-color: azure;
+  }
+  #four {
+    grid-area: four;
+    width: 50vw;
+    height: 2vh;
+    background-color: azure;
+  }
+  #five {
+    grid-area: five;
+    width: 50vw;
+    height: 2vh;
+    background-color: azure;
+  }
+  #A {
+    grid-area: A;
+    display: grid;
+    border: dotted blueviolet;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/carta-a.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: blueviolet;
+    grid-template-areas:
+      "titA tit"
+      "contA contA";
+  }
+
+  #titA {
+    grid-area: titA;
+    width: 100%;
+    height: 10vh;
+  }
+  #tit {
+    grid-area: tit;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+  }
+  #contA {
+    grid-area: contA;
+    width: 100%;
+    height: 90vh;
+    text-align: justify;
+    font-size: 30px;
+  }
+  /* .border {
+    border: solid brown;
+    } */
+  #padreCajones {
+    grid-area: padreCajones;
+    /* border: solid blue; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .child {
+    background-color: aliceblue;
+    width: 100%;
+    height: 25%;
+  }
+  .titpeq {
+    width: 100%;
+    height: 25%;
+  }
+  .contpeq {
+    width: 100%;
+    height: 50%;
+    font-size: 19px;
+  }
+  .abajpeq {
+    width: 30%;
+    height: 25%;
+  }
+  #B {
+    grid-area: B;
+    /* border: solid black; */
+    color: black;
+    width: 100%;
+    height: 100%;
+  }
+
+  #C {
+    grid-area: C;
+    /* border: solid black; */
+    color: black;
+    width: 100%;
+    height: 100%;
+  }
+
+  #D {
+    grid-area: D;
+    /* border: solid black; */
+    color: black;
+    width: 100%;
+    height: 100%;
+  }
+
+  #imgB,
+  #imgC,
+  #imgD {
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #titB,
+  #titC,
+  #titD {
+    background-color: azure;
+    height: 10%;
+    width: 100%;
+  }
+  #contB,
+  #contC,
+  #contD {
+    background-color: azure;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #linea {
+    width: 100vw;
+    grid-template-areas:
+      "linea1"
+      "linea2"
+      "linea3"
+      "linea4"
+      "linea5";
+    align-content: center;
+    text-align: center;
+    grid-template-columns: 2vh;
+  }
+  #linea1 {
+    grid-area: linea1;
+    width: 100vw;
+    background-color: azure;
+    font-size: 25px;
+  }
+  #linea2 {
+    grid-area: linea2;
+    width: 100vw;
+    background-color: azure;
+    font-size: 25px;
+  }
+  #linea3 {
+    grid-area: linea3;
+    width: 100vw;
+    background-color: azure;
+    font-size: 25px;
+  }
+  #linea4 {
+    grid-area: linea4;
+    width: 100vw;
+    background-color: azure;
+    font-size: 25px;
+  }
+  #linea5 {
+    grid-area: linea5;
+    width: 100vw;
+    background-color: azure;
+    font-size: 25px;
+  }
+
+  #redes {
+    display: grid;
+    width: 100vw;
+    grid-template-areas: "face inst xs";
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+  }
+  #face {
+    grid-area: face;
+  }
+  #inst {
+    grid-area: inst;
+  }
+  #xs {   
+    grid-area: xs;
+  }
+/* 
+  footer {
+    display: grid;
+    width: 100vw;
+    height: 80vh;
+    grid-template-columns:
+      "tituloFooter"
+      "contFooter"
+      "linea"
+      "redes";
+
+  }
+
+  #tituloFooter {
+    grid-area: tituloFooter;
+    justify-content: center;
+    text-align: center;
+  }
+  #contFooter {
+    grid-area: contFooter;
+    justify-content: center;
+    text-align: center;
+  }
+  #linea {
+    grid-area: linea;
+  }
+  #redes {
+    grid-area: redes;
+  } */
+}
+
+
